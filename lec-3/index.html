@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Record Table</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <style>
+    body {
+      background-color:#9a0909;
+    }
+  </style>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4" style="color: white;">
+      Student Information Management Table
+    </h2>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Year</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Wyndy Shane</td>
+            <td>Yecyec</td>
+            <td>y.159863.tc@umindanao.edu.ph</td>
+            <td>BSIT</td>
+            <td>2</td>
+            <td>
+              <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#wyndy">View</button>
+              <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#wyndy1">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Nikki</td>
+            <td>Ermac</td>
+            <td>e.123549.tc@umindanao.edu.ph</td>
+            <td>BSIT</td>
+            <td>2</td>
+            <td>
+              <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#nikki">View</button>
+              <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#nikki1">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Deign Marc</td>
+            <td>Dela Tore</td>
+            <td>d.125368.tc@umindanao.edu.ph</td>
+            <td>BSIT</td>
+            <td>2</td>
+            <td>
+              <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#deign">View</button>
+              <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#deign1">Edit</button>
+              <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deign2">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Hiroto</td>
+            <td>Matsubayashi</td>
+            <td>m.145326.tc@umindanao.edu.ph</td>
+            <td>BSCS</td>
+            <td>3</td>
+            <td>
+              <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#hiroto">View</button>
+              <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#hiroto1">Edit</button>
+              <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hiroto2">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Mark Laurence</td>
+            <td>Mandalupe</td>
+            <td>m.156874.tc@umindanao.edu.ph</td>
+            <td>BSPSCH</td>
+            <td>4</td>
+            <td>
+              <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#marc">View</button>
+              <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#marc1">Edit</button>
+              <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#marc2">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal fade" id="wyndy">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Student Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p><strong>ID: </strong>1</p>
+          <p><strong>First Name: </strong>Wyndy Shane</p>
+          <p><strong>Last Name: </strong>Yecyec</p>
+          <p><strong>Email: </strong>y.159863.tc@umindanao.edu.ph</p>
+          <p><strong>Course: </strong>BSIT</p>
+          <p><strong>Year: </strong>2</p>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="nikki">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h5 class="modal-title">Student Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <div class="modal-body">
+          <p><strong>ID: </strong>2</p>
+          <p><strong>First Name: </strong>Nikki</p>
+          <p><strong>Last Name: </strong>Ermac</p>
+          <p><strong>Email: </strong>e.123549.tc@umindanao.edu.ph</p>
+          <p><strong>Course: </strong>BSIT</p>
+          <p><strong>Year: </strong>2</p>
+        </div>
+  
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade" id="deign">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Student Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p><strong>ID: </strong>3</p>
+          <p><strong>First Name: </strong>Deign Marc</p>
+          <p><strong>Last Name: </strong>Dela Tore</p>
+          <p><strong>Email: </strong>d.125368.tc@umindanao.edu.ph</p>
+          <p><strong>Course: </strong>BSIT</p>
+          <p><strong>Year: </strong>2</p>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade" id="hiroto">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Student Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p><strong>ID: </strong>4</p>
+          <p><strong>First Name: </strong>Hiroto</p>
+          <p><strong>Last Name: </strong>Matsubayashi</p>
+          <p><strong>Email: </strong>m.145326.tc@umindanao.edu.ph</p>
+          <p><strong>Course: </strong>BSCS</p>
+          <p><strong>Year: </strong>3</p>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="marc">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Student Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p><strong>ID: </strong>5</p>
+          <p><strong>First Name: </strong>Marc Laurence</p>
+          <p><strong>Last Name: </strong>Mandalupe</p>
+          <p><strong>Email: </strong>m.156874.tc@umindanao.edu.ph</p>
+          <p><strong>Course: </strong>BSPSYCH</p>
+          <p><strong>Year: </strong>4</p>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="wyndy1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Student</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label>ID</label>
+              <input type="text" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>First Name</label>
+              <input type="text" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>Last Name</label>
+              <input type="text" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>Course</label>
+              <input type="text" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>Year</label>
+              <input type="number" class="form-control">
+            </div>
+  
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="nikki1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Student</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label>ID</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>First Name</label>
+              <input type="button" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Last Name</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Course</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Year</label>
+              <input type="number" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="deign1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Student</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label>ID</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>First Name</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Last Name</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <lable>Course</lable>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Year</label>
+              <input type="number" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="hiroto1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Student</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label>ID</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>First Name</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Last Name</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Course</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Year</label>
+              <input type="number" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="marc1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Student</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label>ID</label>
+              <input type="text" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>First Name</label>
+              <input type="text" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>Last Name</label>
+              <input type="text" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>Email</label>
+              <input type="email" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>Course</label>
+              <input type="text" class="form-control">
+            </div>
+  
+            <div class="mb-3">
+              <label>Year</label>
+              <input type="number" class="form-control">
+            </div>
+  
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
